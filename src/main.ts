@@ -5,7 +5,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
     allowedHeaders: '*',
-    origin: '*',
+    origin: 'https://advantage-front.vercel.app/',
   });
   await app.listen(3000);
 }
